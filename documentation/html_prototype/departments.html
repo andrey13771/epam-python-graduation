@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        th, td {
+            padding: 10px
+        }
+    </style>
+    <title>Departments</title>
+</head>
+<body>
+    <h1>Departments</h1>
+    <table>
+        <tr>
+            <th>Department</th>
+            <th>Average salary</th>
+        <tr id="tr1">
+            <td><a id="depname" href="department.html">Department 1</a></td>
+            <td>$1500</td>
+            <td><button id="button1" onclick="editDepartment()">Edit</button></td>
+            <td><button id="button2" onclick="deleteDepartment()">Delete</button></td>
+    </table>
+    <script>
+    function editDepartment() {
+        var dep = document.getElementById("depname");
+        var depName = prompt("Please enter new name for this department", dep.innerText);
+        if (depName != null) {
+            dep.innerText = depName;
+        }
+    }
+    function deleteDepartment() {
+        document.getElementById("tr1").style.display = "none";
+    }
+    </script>
+</body>
+</html>
