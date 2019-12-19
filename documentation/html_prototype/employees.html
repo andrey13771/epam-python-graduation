@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        th, td {
+            padding: 10px
+        }
+        div * {
+            display: inline;
+            margin: 4px
+        }
+    </style>
+    <title>Employees</title>
+</head>
+<body>
+    <h1>Employees</h1>
+    <div>
+        <form id="form1" style="display: none">
+            <input placeholder="Name">
+            <input type="date">
+            <input list="departments" placeholder="Department">
+            <datalist id="departments">
+                <option value="Department 1">
+            </datalist>
+            <input type="submit" value="Add" onclick="">
+        </form>
+        <button onclick="document.getElementById('form1').style.display = 'inline';
+                                this.style.display = 'none'">Add employee</button>
+    </div>
+    <div>
+        <form>
+            <p>Born from</p>
+            <input type="date">
+            <p>to</p>
+            <input type="date">
+            <input type="submit" value="Find">
+        </form>
+    </div>
+    <table>
+        <tr>
+            <th>Employee</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Date of birth</th>
+        <tr>
+            <td><a href="employee.html">Employee 1</a></td>
+            <td><a href="department.html">Department 1</a></td>
+            <td>$1500</td>
+            <td>06.05.1996</td>
+    </table>
+</body>
+</html>
