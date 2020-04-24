@@ -2,6 +2,10 @@ venv/
 
 *.pyc
 __pycache__/
+
 .coverage
+.coveralls.yml
 
 *.egg-info/
+
+.idea/
