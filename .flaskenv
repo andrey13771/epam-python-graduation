@@ -1,1 +1,1 @@
-FLASK_APP=department_app
+FLASK_APP=departments.py
